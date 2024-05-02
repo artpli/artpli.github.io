@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_01b82cce1cd3dfa6b5ae3acb4d9937cc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    <h2 style="position:absolute;z-index:100000;left:40vw" >Peng's Footprints</h2>
+    
+            <div class="folium-map" id="map_01b82cce1cd3dfa6b5ae3acb4d9937cc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_01b82cce1cd3dfa6b5ae3acb4d9937cc = L.map(
+                "map_01b82cce1cd3dfa6b5ae3acb4d9937cc",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6132c551de20413236f156f2e93f0337 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.png",
+                {"attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6132c551de20413236f156f2e93f0337.addTo(map_01b82cce1cd3dfa6b5ae3acb4d9937cc);
+        
+    
+            var feature_group_4131cc0edb7e469ac90dc45377c039b2 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_14ed5fd642f44220f9543e41ebf0e5f6 = L.marker(
+                [37.3821099, 117.97279],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_5075bdb8f2ba6f8750a829b231868f04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_14ed5fd642f44220f9543e41ebf0e5f6.setIcon(icon_5075bdb8f2ba6f8750a829b231868f04);
+        
+    
+            marker_14ed5fd642f44220f9543e41ebf0e5f6.bindTooltip(
+                `<div>
+                     Binzhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fac07f25ef78bd0180401344c9cbc977 = L.marker(
+                [36.6518399, 117.12009],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_adbd22006773d05ab7b86085189df5ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fac07f25ef78bd0180401344c9cbc977.setIcon(icon_adbd22006773d05ab7b86085189df5ba);
+        
+    
+            marker_fac07f25ef78bd0180401344c9cbc977.bindTooltip(
+                `<div>
+                     Jinan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7530de0d7f2463b9a61402761201246 = L.marker(
+                [36.8130999, 118.0548],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_1b783093e83d500c39d831894285b183 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c7530de0d7f2463b9a61402761201246.setIcon(icon_1b783093e83d500c39d831894285b183);
+        
+    
+            marker_c7530de0d7f2463b9a61402761201246.bindTooltip(
+                `<div>
+                     Zibo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7cbdd4c1489dbbfe09e8ade21da571fa = L.marker(
+                [36.0662299, 120.38299],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_b334edfa02842b10b9d12fb5564c3b62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7cbdd4c1489dbbfe09e8ade21da571fa.setIcon(icon_b334edfa02842b10b9d12fb5564c3b62);
+        
+    
+            marker_7cbdd4c1489dbbfe09e8ade21da571fa.bindTooltip(
+                `<div>
+                     Qingdao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da8882a85e54695b71575aaba3437a00 = L.marker(
+                [39.904211, 116.407395],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_140aa1babac97942e1d7f77036a1bb68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_da8882a85e54695b71575aaba3437a00.setIcon(icon_140aa1babac97942e1d7f77036a1bb68);
+        
+    
+            marker_da8882a85e54695b71575aaba3437a00.bindTooltip(
+                `<div>
+                     Beijing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0268f8c563f4335d8e29cdc47119378a = L.marker(
+                [39.085099, 117.199369],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_8a6c5a5e4af62d32ec8fc6d2c89ac2bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0268f8c563f4335d8e29cdc47119378a.setIcon(icon_8a6c5a5e4af62d32ec8fc6d2c89ac2bb);
+        
+    
+            marker_0268f8c563f4335d8e29cdc47119378a.bindTooltip(
+                `<div>
+                     Tianjin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa56365aa48fd39d2eedd9d4f11cd9d6 = L.marker(
+                [31.230416, 121.473701],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_45b30d680cec1b3fb6d746b05acfb2c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_aa56365aa48fd39d2eedd9d4f11cd9d6.setIcon(icon_45b30d680cec1b3fb6d746b05acfb2c5);
+        
+    
+            marker_aa56365aa48fd39d2eedd9d4f11cd9d6.bindTooltip(
+                `<div>
+                     Shanghai
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5168f2ef821217851905b5f83f70032c = L.marker(
+                [31.2983399, 120.58319],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_b336a1d07f37f4f2d06c04bcf72f50c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5168f2ef821217851905b5f83f70032c.setIcon(icon_b336a1d07f37f4f2d06c04bcf72f50c2);
+        
+    
+            marker_5168f2ef821217851905b5f83f70032c.bindTooltip(
+                `<div>
+                     Suzhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a966c889f50cf082e43e742fe11ca05 = L.marker(
+                [30.2741499, 120.15515],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_6445df4b0201224dd46e6b232eb7066b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6a966c889f50cf082e43e742fe11ca05.setIcon(icon_6445df4b0201224dd46e6b232eb7066b);
+        
+    
+            marker_6a966c889f50cf082e43e742fe11ca05.bindTooltip(
+                `<div>
+                     Hangzhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc00d53352700440d08fab90c38f4eae = L.marker(
+                [32.0583799, 118.79647],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_ed307936a57283928afa2992105e7565 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fc00d53352700440d08fab90c38f4eae.setIcon(icon_ed307936a57283928afa2992105e7565);
+        
+    
+            marker_fc00d53352700440d08fab90c38f4eae.bindTooltip(
+                `<div>
+                     Nanjing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_956ff6aa1a2ab77b902953de3b40b1dc = L.marker(
+                [34.2658138, 108.9540936],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_2292b35ef343d7458fc962cbea828e6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_956ff6aa1a2ab77b902953de3b40b1dc.setIcon(icon_2292b35ef343d7458fc962cbea828e6f);
+        
+    
+            marker_956ff6aa1a2ab77b902953de3b40b1dc.bindTooltip(
+                `<div>
+                     Xian
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6b35c4a4dfa95ad3acf18ec57bc5be5 = L.marker(
+                [29.5656843, 106.5511838],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_178f3a199a8e1178edafb8d38ff96817 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e6b35c4a4dfa95ad3acf18ec57bc5be5.setIcon(icon_178f3a199a8e1178edafb8d38ff96817);
+        
+    
+            marker_e6b35c4a4dfa95ad3acf18ec57bc5be5.bindTooltip(
+                `<div>
+                     Chongqing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_754cde9ee0026c06194d7d57953419ec = L.marker(
+                [24.8797, 102.8332],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_afa4edeb6c30eac45591404ee37b800d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_754cde9ee0026c06194d7d57953419ec.setIcon(icon_afa4edeb6c30eac45591404ee37b800d);
+        
+    
+            marker_754cde9ee0026c06194d7d57953419ec.bindTooltip(
+                `<div>
+                     Kunming
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_264e59a7937134e2ebb5a9401a04061a = L.marker(
+                [23.1290799, 113.26436],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_0f9075657f55a46e3c4a9b953c0b5ef5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_264e59a7937134e2ebb5a9401a04061a.setIcon(icon_0f9075657f55a46e3c4a9b953c0b5ef5);
+        
+    
+            marker_264e59a7937134e2ebb5a9401a04061a.bindTooltip(
+                `<div>
+                     Guangzhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c64709ec4dcf1a4ed877b8f8010e0bc1 = L.marker(
+                [32.7811199, 119.45558],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_e9ffd886d19dcbb6b8160ad7c581ab6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c64709ec4dcf1a4ed877b8f8010e0bc1.setIcon(icon_e9ffd886d19dcbb6b8160ad7c581ab6f);
+        
+    
+            marker_c64709ec4dcf1a4ed877b8f8010e0bc1.bindTooltip(
+                `<div>
+                     Gaoyou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f16b48b9ebe764b4aa1fd51da920c4a = L.marker(
+                [21.4811199, 109.12008],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_8dbfcecc02e12d548e94c058945f0bb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5f16b48b9ebe764b4aa1fd51da920c4a.setIcon(icon_8dbfcecc02e12d548e94c058945f0bb2);
+        
+    
+            marker_5f16b48b9ebe764b4aa1fd51da920c4a.bindTooltip(
+                `<div>
+                     Beihai
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4502bdf1c3080caa31453b89b9176022 = L.marker(
+                [28.2277799, 112.93886],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_8fd1f90bb5296d95edb9a6f6774128ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4502bdf1c3080caa31453b89b9176022.setIcon(icon_8fd1f90bb5296d95edb9a6f6774128ad);
+        
+    
+            marker_4502bdf1c3080caa31453b89b9176022.bindTooltip(
+                `<div>
+                     Changsha
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ef6ae08c54ca1343e34153287d772d5 = L.marker(
+                [37.4336499, 118.67466],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_1cc810a285482ff7997437233f2cf9b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5ef6ae08c54ca1343e34153287d772d5.setIcon(icon_1cc810a285482ff7997437233f2cf9b8);
+        
+    
+            marker_5ef6ae08c54ca1343e34153287d772d5.bindTooltip(
+                `<div>
+                     Dongying
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fee9fd959d516c422b5ccc4a4d40960c = L.marker(
+                [42.5387299, 125.7121],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_2f1789c9e12e0f4dce858a217dd9f5c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fee9fd959d516c422b5ccc4a4d40960c.setIcon(icon_2f1789c9e12e0f4dce858a217dd9f5c4);
+        
+    
+            marker_fee9fd959d516c422b5ccc4a4d40960c.bindTooltip(
+                `<div>
+                     Meihekou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d972fdd8c4153da76975c833314b3114 = L.marker(
+                [22.3193039, 114.1693611],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_d258a8c7a757b3b21ee2476479ada69f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d972fdd8c4153da76975c833314b3114.setIcon(icon_d258a8c7a757b3b21ee2476479ada69f);
+        
+    
+            marker_d972fdd8c4153da76975c833314b3114.bindTooltip(
+                `<div>
+                     Hong Kong
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e66ebd515a07e82e0623f49b57d95d9d = L.marker(
+                [34.4142699, 115.65635],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_914a2cdd8c7f660ba9bdd995180c9bbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e66ebd515a07e82e0623f49b57d95d9d.setIcon(icon_914a2cdd8c7f660ba9bdd995180c9bbb);
+        
+    
+            marker_e66ebd515a07e82e0623f49b57d95d9d.bindTooltip(
+                `<div>
+                     Shangqiu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0988fd66a44af99b1e59125ac90de037 = L.marker(
+                [29.9853899, 122.20778],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_889b74dbc76e51ce3a719b5a6f18ec61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0988fd66a44af99b1e59125ac90de037.setIcon(icon_889b74dbc76e51ce3a719b5a6f18ec61);
+        
+    
+            marker_0988fd66a44af99b1e59125ac90de037.bindTooltip(
+                `<div>
+                     Zhoushan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3e18c3a87f0a07941d7b3fe06f921de = L.marker(
+                [29.995762, 120.586109],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_2d37535a1e7ed5e0117d33dc1ae252f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a3e18c3a87f0a07941d7b3fe06f921de.setIcon(icon_2d37535a1e7ed5e0117d33dc1ae252f8);
+        
+    
+            marker_a3e18c3a87f0a07941d7b3fe06f921de.bindTooltip(
+                `<div>
+                     Zhoushan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27729b6b58f1609bd00dfa049d90eb24 = L.marker(
+                [3.1319197, 101.6840589],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_06a0e8f6cb58940ba54103768822a29e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_27729b6b58f1609bd00dfa049d90eb24.setIcon(icon_06a0e8f6cb58940ba54103768822a29e);
+        
+    
+            marker_27729b6b58f1609bd00dfa049d90eb24.bindTooltip(
+                `<div>
+                     Kuala Lumpur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68cead250c99de7ea613137537894a82 = L.marker(
+                [1.352083, 103.819836],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_1558d61fdb3319291df1de3cf9ef07c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_68cead250c99de7ea613137537894a82.setIcon(icon_1558d61fdb3319291df1de3cf9ef07c4);
+        
+    
+            marker_68cead250c99de7ea613137537894a82.bindTooltip(
+                `<div>
+                     Singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_415d398204f9a03ab7d74a3c1d50ae4a = L.marker(
+                [13.7563309, 100.5017651],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_0d549b2499f9ef28454f973f2fe0f87f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_415d398204f9a03ab7d74a3c1d50ae4a.setIcon(icon_0d549b2499f9ef28454f973f2fe0f87f);
+        
+    
+            marker_415d398204f9a03ab7d74a3c1d50ae4a.bindTooltip(
+                `<div>
+                     Bangkok
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6d0e7d810260bdb05d514fa202ba3ff = L.marker(
+                [14.6090537, 121.0222565],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_434f672091521be1f700204c9580a021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a6d0e7d810260bdb05d514fa202ba3ff.setIcon(icon_434f672091521be1f700204c9580a021);
+        
+    
+            marker_a6d0e7d810260bdb05d514fa202ba3ff.bindTooltip(
+                `<div>
+                     Metro Manila
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca43fbaeed5101296a38da3af1e7e0f4 = L.marker(
+                [41.8781136, -87.6297982],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_25c416da81a982068a6eb63037592ec3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ca43fbaeed5101296a38da3af1e7e0f4.setIcon(icon_25c416da81a982068a6eb63037592ec3);
+        
+    
+            marker_ca43fbaeed5101296a38da3af1e7e0f4.bindTooltip(
+                `<div>
+                     Chicago
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a29a5040a662f3140e055b03a48f0cb = L.marker(
+                [37.7749295, -122.4194155],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_ba561620b4d55ccf74ef57bd5d999e5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9a29a5040a662f3140e055b03a48f0cb.setIcon(icon_ba561620b4d55ccf74ef57bd5d999e5d);
+        
+    
+            marker_9a29a5040a662f3140e055b03a48f0cb.bindTooltip(
+                `<div>
+                     San Francisco
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3df0b4b6a6879b49dc1db004962db42 = L.marker(
+                [34.0549076, -118.242643],
+                {}
+            ).addTo(feature_group_4131cc0edb7e469ac90dc45377c039b2);
+        
+    
+            var icon_aa615a2fdff8b6666795ac6b8ad398cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shoe-prints", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f3df0b4b6a6879b49dc1db004962db42.setIcon(icon_aa615a2fdff8b6666795ac6b8ad398cf);
+        
+    
+            marker_f3df0b4b6a6879b49dc1db004962db42.bindTooltip(
+                `<div>
+                     Los Angeles
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_4131cc0edb7e469ac90dc45377c039b2.addTo(map_01b82cce1cd3dfa6b5ae3acb4d9937cc);
+        
+    
+            var feature_group_895874688548aee76d7d1d2757ea5273 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_c506fde80f8484911a3775c78a87d0dc = L.marker(
+                [40.7127753, -74.0059728],
+                {}
+            ).addTo(feature_group_895874688548aee76d7d1d2757ea5273);
+        
+    
+            var icon_b352e819c1ae2bbf3635313e7f637c9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c506fde80f8484911a3775c78a87d0dc.setIcon(icon_b352e819c1ae2bbf3635313e7f637c9a);
+        
+    
+            marker_c506fde80f8484911a3775c78a87d0dc.bindTooltip(
+                `<div>
+                     New York
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_caf5192e198cd839b3a6b05600fea45e = L.marker(
+                [48.8575, 2.3514],
+                {}
+            ).addTo(feature_group_895874688548aee76d7d1d2757ea5273);
+        
+    
+            var icon_fc6c7f6dd05274f9b4896c970a37ac38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_caf5192e198cd839b3a6b05600fea45e.setIcon(icon_fc6c7f6dd05274f9b4896c970a37ac38);
+        
+    
+            marker_caf5192e198cd839b3a6b05600fea45e.bindTooltip(
+                `<div>
+                     Paris
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_926855fdcbc9dc0e2267400fc309fedb = L.marker(
+                [51.5072, 0.1276],
+                {}
+            ).addTo(feature_group_895874688548aee76d7d1d2757ea5273);
+        
+    
+            var icon_5bf09afee70f019fa63fb0d52c67f722 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_926855fdcbc9dc0e2267400fc309fedb.setIcon(icon_5bf09afee70f019fa63fb0d52c67f722);
+        
+    
+            marker_926855fdcbc9dc0e2267400fc309fedb.bindTooltip(
+                `<div>
+                     London
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db504442ae297502abe1b46123735c6f = L.marker(
+                [35.6764, 139.65],
+                {}
+            ).addTo(feature_group_895874688548aee76d7d1d2757ea5273);
+        
+    
+            var icon_433c59532ae03b1cbadaab74a44dd825 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_db504442ae297502abe1b46123735c6f.setIcon(icon_433c59532ae03b1cbadaab74a44dd825);
+        
+    
+            marker_db504442ae297502abe1b46123735c6f.bindTooltip(
+                `<div>
+                     Tokyo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_895874688548aee76d7d1d2757ea5273.addTo(map_01b82cce1cd3dfa6b5ae3acb4d9937cc);
+        
+    
+            var layer_control_7d222ada35a1a0e0b7e01522f50bbb37_layers = {
+                base_layers : {
+                    "https://server.arcgisonline.com/arcgis/rest/services/world_imagery/mapserver/tile/{z}/{y}/{x}.png" : tile_layer_6132c551de20413236f156f2e93f0337,
+                },
+                overlays :  {
+                    "visited" : feature_group_4131cc0edb7e469ac90dc45377c039b2,
+                    "planned" : feature_group_895874688548aee76d7d1d2757ea5273,
+                },
+            };
+            let layer_control_7d222ada35a1a0e0b7e01522f50bbb37 = L.control.layers(
+                layer_control_7d222ada35a1a0e0b7e01522f50bbb37_layers.base_layers,
+                layer_control_7d222ada35a1a0e0b7e01522f50bbb37_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_01b82cce1cd3dfa6b5ae3acb4d9937cc);
+
+        
+</script>
+</html>
